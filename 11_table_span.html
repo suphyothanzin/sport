@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Col and Row spam</title>
+    <style>
+        table, th, td  {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 40%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        tr:hover {
+            background-color: bisque;
+            font-size: 20px;
+            color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <!--colspan-->
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+          <td>Min</td>
+          <td>Yoongi</td>
+          <td>30</td>
+        </tr>
+        <tr>
+            <td>Park</td>
+            <td>jimin</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <!--rowspan-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Melody</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>09-43155702</td>
+        </tr>
+        <tr>
+            <td>09-778039978</td>
+        </tr>
+    </table>
+
+</body>
+</html>

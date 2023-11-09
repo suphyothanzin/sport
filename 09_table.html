@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table, th, td  {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+        }
+        table  {
+            width: 50%;
+            margin: auto;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(83, 214, 81);
+        }
+        td:nth-child(even){
+            background-color: hotpink;
+        }
+        th:nth-child(odd){
+            background-color: rgb(250, 248, 248);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th style="width: 150px;">Name</th>
+            <th>Position</th>
+            <th>Age</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Melody</td>
+            <td>HR</td>
+            <td>23</td>
+            <td>Ygn</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Angela</td>
+            <td>IT</td>
+            <td>20</td>
+            <td>Mdy</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Na Na</td>
+            <td>Eng</td>
+            <td>22</td>
+            <td>Npt</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>May </td>
+            <td>Math</td>
+            <td>25</td>
+            <td>Ygn</td>
+        </tr>
+    </table>
+</body>
+</html>

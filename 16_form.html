@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            background-color: pink;
+            width: 30%;
+            margin: auto;
+            padding: 15%;
+        }
+        #fname , #sname {
+            width: 200px;
+            height: 30px;
+        }
+        select {
+            width: 85px;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <!--data list-->
+        <input list="name_id" name="name_id">
+        <datalist id="name_id">
+            <option value="Ms"></option>
+            <option value="Mr"></option>
+            <option value="Mrs"></option>
+        </datalist>
+        <br><br>
+
+        <!--Input element-->
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Melody"><br><br>
+        <label for="sname">secend name:</label><br>
+        <input type="text" id="sname" name="sname" value="NaNa"><br><br>
+       <br><br>
+
+        <!--buttons-->
+        <input type="submit" value="submit">
+        <button type="submit">Login</button>
+        <button type="button">Click here</button>
+        <button type="button"><a href="10_table_padding.html">Go now</a></button>
+        <button type="reset">Clear</button><br>
+        <button type="button" onclick="alert('Thank U')">Click Now</button>
+        <br><br>
+
+        <!--Radio buttons-->
+        <label>Gender Information</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label>
+        <br><br>
+
+        <!--Checkbox-->
+        <label>Education Level</label><br><br>
+        <input type="checkbox" id="be" name="degree1" value="BE">
+        <label for="be">BE</label>
+        <input type="checkbox" id="me" name="degree2" value="ME">
+        <label for="me">ME</label>
+        <input type="checkbox" id="phd" name="degree3" value="PHD">
+        <label for="phd">PHd</label>
+        <br><br>
+
+        <!--Dropdown List-->
+        <label>Birthdate Information</label><br><br>
+        <select id="day" name="day" size="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <select id="month" name="month">
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="March">March</option>
+        </select>
+        <select id="year" name="year">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+        <br><br>
+        
+        <!--texterea-->
+        <label>Description</label>
+        <textarea name="des" rows="7" cols="27"></textarea>
+    </form>
+</body>
+</html>
